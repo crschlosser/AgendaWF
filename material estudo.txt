@@ -1,0 +1,41 @@
+1 - Em gerenciador de Pacotes Nuget instalar :
+	system.data.sqlite.core
+
+2 - Criar a pasta Models
+	- dentro dela, criar as classes que definem os dados de cada tabela
+		Contato
+	- coloca-las públicas
+	(( lembrar que no Models é singular pois trata um individuo por vez)
+
+3 - Criar a pasta Data e os eventos CRUD
+	- dentro dela, criar as classes que vão trabalhar com o banco
+		dbAgenda
+
+	- colocar as classes públicas
+
+	- adicionar chamada para o SQLite colocando a linha:
+		using System.Data.SQLite;
+
+	- colocar o caminho do banco
+		public static string path = Directory.GetCurrentDirectory() + "\\sqlite";
+
+	- colocar  a chamada para conexao ao banco
+		private static SQLiteConnection sqliteConnection;
+	
+	- criar os metodos para imoplementar na Agenda e Metodos CRUD
+
+(((===>>>  VER NA CLASSE DBaGENDA DO PROJETO COMO FAZER <<<=== ))
+
+
+===================================================================
+
+IMPLEMENTANDO NO FORMULÁRIO
+
+NAS PROPRIEDADES DO FORMULÁTIO
+
+EVENTO LOAD -> Form1 _load
+
+// ver no codigo do evento
+
+
+
